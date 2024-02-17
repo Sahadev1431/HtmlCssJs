@@ -9,8 +9,19 @@ html,body{
     width: 100%;
 }
 
+#miniCircle{
+    transition:cubic-bezier(0.25, 0.46, 0.45, 0.94)0.5s;
+    height: 12px;
+    width: 12px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+}
+
 #main{
     width: 100%;
+    background-color: black;
 }
 
 #hero{
@@ -18,6 +29,7 @@ html,body{
     height: 100vh;
     background-color: black;
     color: #fff;
+    position: relative;
 }
 
 #nav{
@@ -36,10 +48,19 @@ html,body{
 #nav #menu{
     font-size: 16px;
 }
+
+.bounding{
+    width: fit-content;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+.bounding .boundingElem{
+    transform: translateY(100%);
+}
 #heading{
     margin-top: 100px;
     font-weight: 900;
-    /* display: flex; */
 }
 #heading h1{
     font-size: 10vw;
@@ -56,9 +77,12 @@ html,body{
 }
 .blockText{
     width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 .blockText h5{
-    text-align: right;
+    /* text-align: right; */
     margin-top: 20px;
     text-transform: uppercase;
     font-size: 1vw;
@@ -72,16 +96,20 @@ html,body{
     text-transform: uppercase;
     text-align: right;
     font-size: 1.01vw;
+    /* position:absolute; */
     /* padding-left: 10px; */
     /* position: absolute;
     bottom: 1%; */
 }
 .footer .right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     width: 100%;
     padding-right: 2vw;
     line-height: 2;
     justify-content: right;
-    position: absolute;
+    position:absolute;
     bottom: 1%;
 }
 .footer .left {
@@ -101,13 +129,9 @@ html,body{
 .footer .right .forCir{
     display: flex;
     justify-content: right;
-    
-    /* background-color: #e5e7eb; */
-    /* height: 1px;
-    width: 1px; */
 }
 .footer .right .forCir i{
-    display:flex;
+    display:flex; 
     background-color:#e5e7eb ;
     opacity: .7;
     height: 1.7vw;
@@ -116,7 +140,7 @@ html,body{
     justify-content: center;
     align-items: center;
     color: black;
-    margin: 2px;
+    margin: 2px; 
 }
 
 
@@ -199,4 +223,30 @@ html,body{
     color: #fff;
     text-decoration: none;
     font-size: 15px;
+}
+
+#lastFooter{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+#lastFooter #leftFooter{
+    display: flex;
+    letter-spacing: 2px;
+    gap: 40px;
+}
+
+
+#lastFooter #rightFooter{
+    display: flex;
+    gap: 50px;
+}
+#lastFooter #rightFooter a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
 }

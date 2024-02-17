@@ -7,9 +7,11 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="locomotiveScroll.css">
 </head>
 
 <body>
+    <div id="miniCircle"></div>
     <div id="main">
         <div id="hero">
             <div id="nav">
@@ -18,11 +20,18 @@
                 <p id="menu">MENU+</p>
             </div>
 
+
             <div id="heading">
-                <h1>product</h1>
+                <div class="bounding">
+                    <h1 class="boundingElem">product</h1>
+                </div>
                 <div class="blockText">
-                    <h1 id="secondH1">designer</h1>
-                    <h5>based in toronto</h5>
+                    <div class="bounding">
+                        <h1 id="secondH1" class="boundingElem">designer</h1>
+                    </div>
+                    <div class="bounding">
+                        <h5 class="boundingElem">based in toronto</h5>
+                    </div>
                 </div>
             </div>
 
@@ -33,8 +42,13 @@
                 </div>
 
                 <div class="right">
-                    <h4>available for freelance</h4>
-                    <h4>work from february 24'</h4>
+                    <div class="bounding">
+                        <h4 class="boundingElem">available for freelance</h4>
+                    </div>
+                    <div class="bounding">
+                        <h4 class="boundingElem">work from february 24'</h4>
+                    </div>
+
                     <div class="forCir">
                         <div class="circle"><i class="ri-arrow-down-line"></i></div>
                         <div class="circle"><i class="ri-arrow-down-line"></i></div>
@@ -83,7 +97,25 @@
             </div>
             
         </div>
+
+        <div id="lastFooter">
+            <div id="leftFooter">
+                <h4>2024 &copy</h4>
+                <h4>10:03 EST</h4>
+            </div>
+
+            <div id="rightFooter">
+                <a href="#">Instagram</a>
+                <a href="#">Linkdin</a>
+                <a href="#">Github</a>
+            </div>
+        </div>
     </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
