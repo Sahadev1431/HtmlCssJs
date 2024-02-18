@@ -89,48 +89,29 @@ html,body{
     letter-spacing: 1px;
 }
 
-.footer{
+.herofooter{
     width: 100%;
     display: flex;
     justify-content:space-between;
     text-transform: uppercase;
     text-align: right;
     font-size: 1.01vw;
-    /* position:absolute; */
-    /* padding-left: 10px; */
-    /* position: absolute;
-    bottom: 1%; */
+    padding:0 20px 0 20px;
+    position : absolute;
+    bottom: 0;
 }
-.footer .right{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    width: 100%;
-    padding-right: 2vw;
-    line-height: 2;
-    justify-content: right;
-    position:absolute;
-    bottom: 1%;
-}
-.footer .left {
-    width: 55%;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 1%;
-    padding: 0 0 0.5vw 2vw;
-}
-.footer .left a{
+
+.herofooter a{
     text-decoration: none;
     color: #fff;
     font-weight: 500;
 }
 
-.footer .right .forCir{
+.herofooter .forCir{
     display: flex;
     justify-content: right;
 }
-.footer .right .forCir i{
+.herofooter .forCir i{
     display:flex; 
     background-color:#e5e7eb ;
     opacity: .7;
@@ -177,8 +158,11 @@ html,body{
 .elem img{
     z-index: 999;
     height: 140%;
-    display: none;
-    position: absolute;
+    /* display: none; */
+    opacity: 0;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
 }
 
 .lastElem{
